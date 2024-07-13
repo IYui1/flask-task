@@ -3,10 +3,9 @@ import requests
 import json
 import smtplib
 from email.mime.text import MIMEText
-# USE YOUR OWN npoint LINK! ADD AN IMAGE URL FOR YOUR POST. 👇
 posts = requests.get("https://api.npoint.io/c790b4d5cab58020d391").json()
-OWN_EMAIL = 'becomeyouwant@gmail.com'
-OWN_PASSWORD = "oxrmxwjvczuhxudn"
+OWN_EMAIL = 'Your Email'
+OWN_PASSWORD = "YOUR CODE PASSWORD"
 app = Flask(__name__)
 
 
@@ -45,7 +44,7 @@ def receive_data():
         
         # Print the JSON data to the console
         print(json_data)
-        recipients = ['redaalfajri123@gmail.com', 'redhaalfajri036@gmail.com', 'yui624314@gmail.com']
+        recipients = ['asded@gmail.com','nchjedj6@gmail.com', 'hajddccu14@gmail.com']
         send_email(username, email, phone, message,recipients)
         
         return "Successfully Sent"
